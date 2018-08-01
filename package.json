@@ -1,0 +1,35 @@
+{
+  "name": "iap-styles",
+  "version": "0.0.0",
+  "description": "CSS framework of IAP based on Bootstrap.",
+  "main": "index.js",
+  "scripts": {
+    "prestart": "npm install",
+    "start": "npm run build && npm run css:sass:watch & http-server",
+    "prod": "npm run build && npm run css:postcss && npm run css:minify",
+    "build": "npm run css:sass",
+    "css:minify": "cleancss --level 1 --source-map --source-map-inline-sources --output dist/css/iap-styles.min.css dist/css/iap-styles.css",
+    "css:postcss": "postcss dist/css/iap-styles.css -o dist/css/iap-styles.css",
+    "css:sass": "node-sass --output-style expanded --source-map true --source-map-contents true --precision 6 src/scss/ --output dist/css/",
+    "css:sass:watch": "npm run css:sass -- --watch --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Incubit/IAP_styles.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Incubit/IAP_styles/issues"
+  },
+  "homepage": "https://github.com/Incubit/IAP_styles#readme",
+  "devDependencies": {
+    "autoprefixer": "^9.0.2",
+    "bootstrap": "^4.1.3",
+    "clean-css-cli": "^4.1.11",
+    "http-server": "^0.11.1",
+    "node-sass": "^4.9.2",
+    "postcss-cli": "^6.0.0"
+  }
+}
