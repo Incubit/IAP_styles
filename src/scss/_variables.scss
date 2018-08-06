@@ -37,18 +37,18 @@ $blue-gray-light: #b1bdc8;
 $blue-gray:       #647789;
 $blue-gray-dark:  #32485c;
 
-$slate-grey: #606366;
+$slate-gray: #606366;
 
 $blue:    #23a0d0;
 $indigo:  #1387ba;
-$purple:  #8477e5;
+$purple:  #a283ee;
 $pink:    #f0516f;
 $red:     #ff6b6b;
 $orange:  #f5a623;
 $yellow:  #fbd249;
 $green:   #429321;
-$teal:    #6dcdb8;
-$cyan:    #62c4cc;
+$teal:    #5ac6af;
+$cyan:    #4fbdc6;
 
 $colors: (
   "blue":      $blue,
@@ -67,23 +67,23 @@ $colors: (
 );
 
 $primary:   $cyan;
-$secondary: $gray-300;
+$secondary: $blue-gray-light;
 $success:   $indigo;
 $info:      $teal;
 $warning:   $orange;
 $danger:    $red;
-$light:     $blue-gray-light;
+$light:     $gray-300;
 $dark:      $blue-gray-dark;
 
 // Bland colors.
 
 $brand-global:            $cyan;
-$brand-global-gradient-0: $brand-global;
-$brand-global-gradient-1: $blue;
+$brand-gradient-global-0: #62c4cc;
+$brand-gradient-global-1: #23a0d0;
 
 $brand-ai:            $purple;
-$brand-ai-gradient-0: #978eda;
-$brand-ai-gradient-1: #77afd9;
+$brand-gradient-ai-0: #978eda;
+$brand-gradient-ai-1: #77afd9;
 
 $theme-colors: (
   "primary":   $primary,
@@ -95,12 +95,18 @@ $theme-colors: (
   "light":     $light,
   "dark":      $dark,
 
-  "brand-global":            $brand-global,
-  "brand-global-gradient-0": $brand-global-gradient-0,
-  "brand-global-gradient-1": $brand-global-gradient-1,
-  "brand-ai":                $brand-ai,
-  "brand-ai-gradient-0":     $brand-ai-gradient-0,
-  "brand-ai-gradient-1":     $brand-ai-gradient-1
+  "brand-global": $brand-global,
+  "brand-ai":     $brand-ai
+);
+
+$brand-colors: (
+  "global": $brand-global,
+  "ai":     $brand-ai
+);
+
+$brand-gradient-colors: (
+  "global": $brand-gradient-global-0 $brand-gradient-global-1,
+  "ai":     $brand-gradient-ai-0 $brand-gradient-ai-1
 );
 
 // Set a specific jump point for requesting color jumps
@@ -221,7 +227,7 @@ $line-height-lg:              1.5;
 $line-height-sm:              1.5;
 
 $border-width:                1px;
-$border-color:                $blue-gray-light;
+$border-color:                $gray-300;
 
 $border-radius:               .25rem;
 $border-radius-lg:            .3rem;
@@ -298,7 +304,7 @@ $text-muted:                  $blue-gray-light;
 $blockquote-small-color:      $blue-gray-light;
 $blockquote-font-size:        ($font-size-base * 1.25);
 
-$hr-border-color:             $border-color;
+$hr-border-color:             $gray-300;
 $hr-border-width:             $border-width;
 
 $mark-padding:                .2em;
@@ -319,7 +325,7 @@ $hr-margin-y:                 $spacer;
 //
 // Customizes the `.table` component with basic values, each used across all table variations.
 
-$table-cell-padding:          .75rem;
+$table-cell-padding:          1.5rem .75rem .75rem .75rem;
 $table-cell-padding-sm:       .3rem;
 
 $table-bg:                    transparent;
@@ -328,7 +334,7 @@ $table-hover-bg:              $gray-200;
 $table-active-bg:             $table-hover-bg;
 
 $table-border-width:          $border-width;
-$table-border-color:          $gray-300;
+$table-border-color:          $border-color;
 
 $table-head-bg:               $gray-200;
 $table-head-color:            $blue-gray-dark;
@@ -422,22 +428,22 @@ $input-line-height-lg:                  $input-btn-line-height-lg;
 $input-bg:                              $white;
 $input-disabled-bg:                     $gray-200;
 
-$input-color:                           $slate-grey;
-$input-border-color:                    $border-color;
+$input-color:                           $slate-gray;
+$input-border-color:                    $blue-gray-light;
 $input-border-width:                    $input-btn-border-width;
 $input-box-shadow:                      inset 0 1px 1px rgba($black, .075);
 
-$input-border-radius:                   calc($border-radius / 2);
-$input-border-radius-lg:                calc($border-radius-lg / 2);
-$input-border-radius-sm:                calc($border-radius-sm / 2);
+$input-border-radius:                   $border-radius / 2;
+$input-border-radius-lg:                $border-radius-lg / 2;
+$input-border-radius-sm:                $border-radius-sm / 2;
 
 $input-focus-bg:                        $input-bg;
 $input-focus-border-color:              $component-active-bg;
 $input-focus-color:                     $input-color;
 $input-focus-width:                     0;
-$input-focus-box-shadow:                $input-btn-focus-box-shadow;
+$input-focus-box-shadow:                none;
 
-$input-placeholder-color:               $border-color;
+$input-placeholder-color:               $blue-gray-light;
 $input-plaintext-color:                 $blue-gray-dark;
 
 $input-height-border:                   $input-border-width * 2;
@@ -492,7 +498,7 @@ $custom-control-indicator-active-color:         $component-active-color;
 $custom-control-indicator-active-bg:            lighten($component-active-bg, 35%);
 $custom-control-indicator-active-box-shadow:    none;
 
-$custom-checkbox-indicator-border-radius:       $border-radius;
+$custom-checkbox-indicator-border-radius:       $border-radius / 2;
 $custom-checkbox-indicator-icon-checked:        str-replace(url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3E%3Cpath fill='#{$custom-control-indicator-checked-color}' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3E%3C/svg%3E"), "#", "%23");
 
 $custom-checkbox-indicator-indeterminate-bg:          $component-active-bg;
@@ -519,7 +525,7 @@ $custom-select-background:          $custom-select-indicator no-repeat right $cu
 
 $custom-select-border-width:        $input-btn-border-width;
 $custom-select-border-color:        $input-border-color;
-$custom-select-border-radius:       $border-radius;
+$custom-select-border-radius:       $border-radius / 2;
 $custom-select-box-shadow:          inset 0 1px 2px rgba($black, .075);
 
 $custom-select-focus-border-color:  $input-focus-border-color;
@@ -602,14 +608,14 @@ $dropdown-border-width:             $border-width;
 $dropdown-divider-bg:               $border-color;
 $dropdown-box-shadow:               0 .5rem 1rem rgba($black, .175);
 
-$dropdown-link-color:               $slate-grey;
+$dropdown-link-color:               $slate-gray;
 $dropdown-link-hover-color:         darken($dropdown-link-color, 5%);
 $dropdown-link-hover-bg:            $gray-200;
 
 $dropdown-link-active-color:        $component-active-color;
 $dropdown-link-active-bg:           $component-active-bg;
 
-$dropdown-link-disabled-color:      $gray-600;
+$dropdown-link-disabled-color:      $gray-400;
 
 $dropdown-item-padding-y:           .25rem;
 $dropdown-item-padding-x:           1.5rem;
@@ -634,7 +640,7 @@ $zindex-tooltip:                    1070;
 
 $nav-link-padding-y:                .5rem;
 $nav-link-padding-x:                1rem;
-$nav-link-disabled-color:           $gray-600;
+$nav-link-disabled-color:           $gray-400;
 
 $nav-tabs-border-color:             $gray-300;
 $nav-tabs-border-width:             $border-width;
@@ -710,7 +716,7 @@ $pagination-active-color:           $component-active-color;
 $pagination-active-bg:              $component-active-bg;
 $pagination-active-border-color:    $pagination-active-bg;
 
-$pagination-disabled-color:         $gray-600;
+$pagination-disabled-color:         $gray-400;
 $pagination-disabled-bg:            $white;
 $pagination-disabled-border-color:  $pagination-border-color;
 
@@ -729,7 +735,7 @@ $card-border-width:                 $border-width;
 $card-border-radius:                $border-radius;
 $card-border-color:                 $border-color;
 $card-inner-border-radius:          calc(#{$card-border-radius} - #{$card-border-width});
-$card-cap-bg:                       $white;
+$card-cap-bg:                       $gray-200;
 $card-bg:                           $white;
 
 $card-img-overlay-padding:          1.25rem;
@@ -747,7 +753,7 @@ $card-columns-margin:               $card-spacer-y;
 $tooltip-font-size:                 $font-size-sm;
 $tooltip-max-width:                 200px;
 $tooltip-color:                     $white;
-$tooltip-bg:                        $slate-grey;
+$tooltip-bg:                        $slate-gray;
 $tooltip-border-radius:             $border-radius;
 $tooltip-opacity:                   .9;
 $tooltip-padding-y:                 .25rem;
@@ -769,7 +775,7 @@ $popover-border-color:              $border-color;
 $popover-border-radius:             $border-radius-lg;
 $popover-box-shadow:                0 .25rem .5rem rgba($black, .2);
 
-$popover-header-bg:                 darken($popover-bg, 3%);
+$popover-header-bg:                 $gray-200;
 $popover-header-color:              $headings-color;
 $popover-header-padding-y:          .5rem;
 $popover-header-padding-x:          .75rem;
@@ -850,10 +856,10 @@ $alert-color-level:                 6;
 
 // Progress bars
 
-$progress-height:                   1rem;
+$progress-height:                   0.25rem;
 $progress-font-size:                ($font-size-base * .75);
 $progress-bg:                       $gray-400;
-$progress-border-radius:            $border-radius;
+$progress-border-radius:            $border-radius / 2;
 $progress-box-shadow:               inset 0 .1rem .1rem rgba($black, .1);
 $progress-bar-color:                $white;
 $progress-bar-bg:                   $primary;
@@ -875,10 +881,10 @@ $list-group-active-color:           $component-active-color;
 $list-group-active-bg:              $component-active-bg;
 $list-group-active-border-color:    $list-group-active-bg;
 
-$list-group-disabled-color:         $gray-600;
+$list-group-disabled-color:         $gray-400;
 $list-group-disabled-bg:            $list-group-bg;
 
-$list-group-action-color:           $slate-grey;
+$list-group-action-color:           $slate-gray;
 $list-group-action-hover-color:     $list-group-action-color;
 
 $list-group-action-active-color:    $blue-gray-dark;
@@ -909,9 +915,9 @@ $breadcrumb-item-padding:           .5rem;
 
 $breadcrumb-margin-bottom:          1rem;
 
-$breadcrumb-bg:                     transparent;
-$breadcrumb-divider-color:          $slate-grey;
-$breadcrumb-active-color:           $slate-grey;
+$breadcrumb-bg:                     $gray-200;
+$breadcrumb-divider-color:          $gray-600;
+$breadcrumb-active-color:           $gray-600;
 $breadcrumb-divider:                quote("/");
 
 $breadcrumb-border-radius:          $border-radius;
@@ -944,7 +950,7 @@ $carousel-transition:               transform .6s ease; // Define transform tran
 
 $close-font-size:                   $font-size-base * 1.5;
 $close-font-weight:                 $font-weight-bold;
-$close-color:                       $slate-grey;
+$close-color:                       $slate-gray;
 $close-text-shadow:                 0 1px 0 $white;
 
 // Code
@@ -956,9 +962,9 @@ $kbd-padding-y:                     .2rem;
 $kbd-padding-x:                     .4rem;
 $kbd-font-size:                     $code-font-size;
 $kbd-color:                         $white;
-$kbd-bg:                            $gray-900;
+$kbd-bg:                            $blue-gray-dark;
 
-$pre-color:                         $gray-900;
+$pre-color:                         $blue-gray-dark;
 $pre-scrollable-max-height:         340px;
 
 
@@ -971,8 +977,34 @@ $print-body-min-width:              map-get($grid-breakpoints, "lg");
 // IAP styles.
 //
 
+// Boxshadow for depth
+$depth-box-shadow-1: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+$depth-box-shadow-2: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+$depth-box-shadow-3: 0px 3px 3px -2px rgba(0, 0, 0, 0.2), 0px 3px 4px 0px rgba(0, 0, 0, 0.14), 0px 1px 8px 0px rgba(0, 0, 0, 0.12);
+$depth-box-shadow-4: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+$depth-box-shadow-6: 0px 3px 5px -1px rgba(0, 0, 0, 0.2), 0px 6px 10px 0px rgba(0, 0, 0, 0.14), 0px 1px 18px 0px rgba(0, 0, 0, 0.12);
+$depth-box-shadow-8: 0px 5px 5px -3px rgba(0, 0, 0, 0.2), 0px 8px 10px 1px rgba(0, 0, 0, 0.14), 0px 3px 14px 2px rgba(0, 0, 0, 0.12);
+$depth-box-shadow-9: 0px 5px 6px -3px rgba(0, 0, 0, 0.2), 0px 9px 12px 1px rgba(0, 0, 0, 0.14), 0px 3px 16px 2px rgba(0, 0, 0, 0.12);
+$depth-box-shadow-12: 0px 7px 8px -4px rgba(0, 0, 0, 0.2), 0px 12px 17px 2px rgba(0, 0, 0, 0.14), 0px 5px 22px 4px rgba(0, 0, 0, 0.12);
+$depth-box-shadow-16: 0px 8px 10px -5px rgba(0, 0, 0, 0.2), 0px 16px 24px 2px rgba(0, 0, 0, 0.14), 0px 6px 30px 5px rgba(0, 0, 0, 0.12);
+$depth-box-shadow-24: 0px 11px 15px -7px rgba(0, 0, 0, 0.2), 0px 24px 38px 3px rgba(0, 0, 0, 0.14), 0px 9px 46px 8px rgba(0, 0, 0, 0.12);
+
+$depth-box-shadows: (
+  1: $depth-box-shadow-1,
+  2: $depth-box-shadow-2,
+  3: $depth-box-shadow-3,
+  4: $depth-box-shadow-4,
+  6: $depth-box-shadow-6,
+  8: $depth-box-shadow-8,
+  9: $depth-box-shadow-9,
+  12: $depth-box-shadow-12,
+  16: $depth-box-shadow-16,
+  24: $depth-box-shadow-24
+);
+
+
 // Layouts
 
-$left-sidebar-width: 260px;
-$header-height: 56px;
-$footer-height: 56px;
+$layout-left-sidebar-width: 260px;
+$layout-header-height: 56px;
+$layout-footer-height: 56px;

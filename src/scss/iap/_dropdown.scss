@@ -1,0 +1,22 @@
+.dropdown {
+  .dropdown-link {
+    color: $body-color;
+    text-decoration: none;
+    cursor: pointer;
+
+    @include caret;
+
+    &:hover {
+      color: darken($body-color, 7.5%)
+    }
+
+    &:focus {
+      color: darken($body-color, 10%)
+    }
+
+    &:after {
+      margin-left: .5rem;
+      color: $primary;
+    }
+  }
+}

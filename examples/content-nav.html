@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="/dist/css/iap-styles.min.css">
+</head>
+<body>
+  <div class="wrapper wrapper-offset-left-sidebar">
+    <div class="sidebar left-sidebar">
+      <div class="sidebar-inner">
+        <div class="mb-5">
+          <span class="sidebar-brand">IAP<small>Sub Category</small></span>
+        </div>
+        <div>
+          <ul class="sidebar-nav sidebar-nav-global">
+            <li class="nav-item">
+              <a href="#" class="nav-link">Item 1</a>
+            </li>
+            <li class="nav-item">
+              <div class="nav-drilldown hoverable active">
+                <a  href="#" class="nav-link">Item 2</a>
+                <ul class="nav nav-children">
+                  <li class="nav-item">
+                    <a href="#" class="nav-link active">Item 2-1</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">Item 2-2</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item">
+              <div class="nav-drilldown hoverable">
+                <a  href="#" class="nav-link">Item 3</a>
+                <ul class="nav nav-children">
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">Item 3-1</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">Item 3-2</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <header class="header header-fixed bg-gray-100">
+      <div class="header-inner">
+        <div>
+          <ul class="header-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Dropdown
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#">Disabled</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <div class="content content-with-fixed-header">
+      <div class="content-header content-header-sticky bg-gray-100">
+        <div class="container">
+          <nav aria-label="breadcrumb">
+            <ol class="content-breadcrumb">
+              <li class="breadcrumb-item"><a href="#">Home</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Team members</li>
+            </ol>
+          </nav>
+          <h1>Test A</h1>
+          <ul class="content-nav content-nav-global">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Active</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#">Disabled</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="content-main">
+        <div class="container">
+          <div class="d-flex justify-content-end">
+            <button class="btn btn-brand btn-brand-global">+ Invite Member</button>
+          </div>
+          <table class="table table-hover">
+            <thead>
+              <tr>
+                <th>Members</th>
+                <th>Roles</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Jhon Doe</td>
+                <td>
+                  <div class="dropdown">
+                    <span class="dropdown-link dropdown-toggle" id="member0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Admin, Member
+                    </span>
+                    <div class="dropdown-menu" aria-labelledby="member0">
+                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="#">Another action</a>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <span class="badge badge-light">Invited</span>
+                </td>
+              </tr>
+              <tr>
+                <td>Jhon Doe</td>
+                <td>
+                  <div class="dropdown">
+                    <span class="dropdown-link dropdown-toggle" id="member1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Member
+                    </span>
+                    <div class="dropdown-menu" aria-labelledby="member1">
+                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="#">Another action</a>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <span class="badge badge-light">Invited</span>
+                </td>
+              </tr>
+              <tr>
+                <td>Jhon Doe</td>
+                <td>
+                  <div class="dropdown">
+                    <span class="dropdown-link dropdown-toggle" id="member2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Member
+                    </span>
+                    <div class="dropdown-menu" aria-labelledby="member2">
+                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="#">Another action</a>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <span class="badge badge-light">Invited</span>
+                </td>
+              </tr>
+              <tr>
+                <td>Jhon Doe</td>
+                <td>
+                  <div class="dropdown">
+                    <span class="dropdown-link dropdown-toggle" id="member3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Member
+                    </span>
+                    <div class="dropdown-menu" aria-labelledby="member3">
+                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="#">Another action</a>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <span class="badge badge-info">Pending</span>
+                </td>
+              </tr>
+              <tr>
+                <td>Jhon Doe</td>
+                <td>
+                  <div class="dropdown">
+                    <span class="dropdown-link dropdown-toggle" id="member4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Member
+                    </span>
+                    <div class="dropdown-menu" aria-labelledby="member4">
+                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="#">Another action</a>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <span class="badge badge-light">Invited</span>
+                </td>
+              </tr>
+              <tr>
+                <td>Jhon Doe</td>
+                <td>
+                  <div class="dropdown">
+                    <span class="dropdown-link dropdown-toggle" id="member5" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Member
+                    </span>
+                    <div class="dropdown-menu" aria-labelledby="member6">
+                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="#">Another action</a>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <span class="badge badge-light">Invited</span>
+                </td>
+              </tr>
+              <tr>
+                <td>Jhon Doe</td>
+                <td>
+                  <div class="dropdown">
+                    <span class="dropdown-link dropdown-toggle" id="member7" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Member
+                    </span>
+                    <div class="dropdown-menu" aria-labelledby="member7">
+                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="#">Another action</a>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <span class="badge badge-info">Pending</span>
+                </td>
+              </tr>
+              <tr>
+                <td>Jhon Doe</td>
+                <td>
+                  <div class="dropdown">
+                    <span class="dropdown-link dropdown-toggle" id="member8" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Member
+                    </span>
+                    <div class="dropdown-menu" aria-labelledby="member8">
+                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="#">Another action</a>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <span class="badge badge-light">Invited</span>
+                </td>
+              </tr>
+              <tr>
+                <td>Jhon Doe</td>
+                <td>
+                  <div class="dropdown">
+                    <span class="dropdown-link dropdown-toggle" id="member9" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Member
+                    </span>
+                    <div class="dropdown-menu" aria-labelledby="member9">
+                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="#">Another action</a>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <span class="badge badge-light">Invited</span>
+                </td>
+              </tr>
+              <tr>
+                <td>Jhon Doe</td>
+                <td>
+                  <div class="dropdown">
+                    <span class="dropdown-link dropdown-toggle" id="member10" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Member
+                    </span>
+                    <div class="dropdown-menu" aria-labelledby="member10">
+                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="#">Another action</a>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <span class="badge badge-info">Pending</span>
+                </td>
+              </tr>
+              <tr>
+                <td>Jhon Doe</td>
+                <td>
+                  <div class="dropdown">
+                    <span class="dropdown-link dropdown-toggle" id="member11" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Member
+                    </span>
+                    <div class="dropdown-menu" aria-labelledby="member11">
+                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="#">Another action</a>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <span class="badge badge-light">Invited</span>
+                </td>
+              </tr>
+              <tr>
+                <td>Jhon Doe</td>
+                <td>
+                  <div class="dropdown">
+                    <span class="dropdown-link dropdown-toggle" id="member12" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Member
+                    </span>
+                    <div class="dropdown-menu" aria-labelledby="member12">
+                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="#">Another action</a>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <span class="badge badge-light">Invited</span>
+                </td>
+              </tr>
+              <tr>
+                <td>Jhon Doe</td>
+                <td>
+                  <div class="dropdown">
+                    <span class="dropdown-link dropdown-toggle" id="member13" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Member
+                    </span>
+                    <div class="dropdown-menu" aria-labelledby="member13">
+                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="#">Another action</a>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <span class="badge badge-info">Pending</span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>
