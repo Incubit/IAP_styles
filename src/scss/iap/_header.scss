@@ -1,0 +1,29 @@
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  background: transparent;
+  padding: 0.5rem 2rem;
+}
+
+.header-nav {
+  display: flex;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+
+  .nav-link {
+    color: $slate-gray;
+    padding-right: $navbar-nav-link-padding-x;
+    padding-left: $navbar-nav-link-padding-x;
+
+    &:hover,
+    &:focus {
+      color: darkn($slate-gray, 15%);
+    }
+
+    &.disabled {
+      color: $gray-600
+    }
+  }
+}

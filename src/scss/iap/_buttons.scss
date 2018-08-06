@@ -1,0 +1,41 @@
+.btn-brand {
+  @include button-brand-variant(($blue-gray-light $blue-gray-light));
+
+  border-width: 0;
+  @include button-size(calc(#{$btn-padding-y} + #{$btn-border-width}), calc(#{$btn-padding-x} + #{$btn-border-width}), $font-size-base, $btn-line-height, $btn-border-radius);
+
+  @each $brand, $value in $brand-gradient-colors {
+    &.btn-brand-#{$brand} {
+      @include button-brand-variant($value);
+    }
+  }
+
+  &.btn-lg {
+    @include button-size(calc(#{$btn-padding-y-lg} + #{$btn-border-width}), calc(#{$btn-padding-x-lg} + #{$btn-border-width}), $font-size-lg, $btn-line-height-lg, $btn-border-radius-lg);
+  }
+
+  &.btn-sm {
+    @include button-size(calc(#{$btn-padding-y-sm} + #{$btn-border-width}), calc(#{$btn-padding-x-sm} + #{$btn-border-width}), $font-size-sm, $btn-line-height-sm, $btn-border-radius-sm);
+  }
+}
+
+.btn-brand-outline {
+  @include button-brand-outline-variant($blue-gray-light);
+
+  border-width: ($btn-border-width + 1px);
+  @include button-size(calc(#{$btn-padding-y} - 1px), calc(#{$btn-padding-x} - 1px), $font-size-base, $btn-line-height, $btn-border-radius);
+
+  @each $brand, $value in $brand-colors {
+    &.btn-brand-outline-#{$brand} {
+      @include button-brand-outline-variant($value);
+    }
+  }
+
+  &.btn-lg {
+    @include button-size(calc(#{$btn-padding-y-lg} - 1px), calc(#{$btn-padding-x-lg} - 1px), $font-size-lg, $btn-line-height-lg, $btn-border-radius-lg);
+  }
+
+  &.btn-sm {
+    @include button-size(calc(#{$btn-padding-y-sm} - 1px), calc(#{$btn-padding-x-sm} - 1px), $font-size-sm, $btn-line-height-sm, $btn-border-radius-sm);
+  }
+}

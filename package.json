@@ -5,8 +5,9 @@
   "main": "index.js",
   "scripts": {
     "prestart": "npm install",
-    "start": "npm run build && npm run css:sass:watch & http-server",
+    "start": "http-server",
     "prod": "npm run build && npm run css:postcss && npm run css:minify",
+    "dev": "npm run build && npm run css:sass:watch & http-server",
     "build": "npm run css:sass",
     "css:minify": "cleancss --level 1 --source-map --source-map-inline-sources --output dist/css/iap-styles.min.css dist/css/iap-styles.css",
     "css:postcss": "postcss dist/css/iap-styles.css -o dist/css/iap-styles.css",
@@ -31,5 +32,8 @@
     "http-server": "^0.11.1",
     "node-sass": "^4.9.2",
     "postcss-cli": "^6.0.0"
+  },
+  "peerDependencies": {
+    "bootstrap": "^4.1.3"
   }
 }
