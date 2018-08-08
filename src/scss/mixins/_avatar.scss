@@ -1,0 +1,10 @@
+@mixin avatar-size($size) {
+  width: calc(#{$size} - 2px);
+  height: calc(#{$size} - 2px);
+  border-radius: $size / 2;
+  line-height: calc(#{$size} - 2px);
+}
+
+@mixin avatar-variant($value) {
+  background: linear-gradient(to bottom, $value, lighten($value, 15%));
+}

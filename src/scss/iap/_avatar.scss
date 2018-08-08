@@ -1,0 +1,65 @@
+span.avatar {
+  display: inline-block;
+
+  @include avatar-variant($blue-gray-light);
+  color: $white;
+  border: 1px solid $gray-200;
+
+  @include avatar-size($avatar-size);
+  text-align: center;
+
+  @each $color, $value in $colors {
+    &.avatar-#{$color} {
+      @include avatar-variant($value);
+    }
+  }
+}
+
+img.avatar {
+  display: inline-block;
+  @include avatar-size($avatar-size);
+  border: 1px solid $gray-200;
+  object-fit: cover;
+}
+
+.avatar {
+  &.avatar-sm {
+    @include avatar-size($avatar-size-sm);
+    font-size: $font-size-sm;
+  }
+
+  &.avatar-lg {
+    @include avatar-size($avatar-size-lg);
+    font-size: $font-size-lg;
+  }
+}
+
+.avatar-group {
+  display: inline-flex;
+
+  .avatar + .avatar {
+    margin-left: - $avatar-size * 0.25;
+  }
+}
+
+.avatar-group-sm {
+  > .avatar {
+    @include avatar-size($avatar-size-sm);
+    font-size: $font-size-sm;
+  }
+
+  .avatar + .avatar {
+    margin-left: - $avatar-size-sm * 0.25;
+  }
+}
+
+.avatar-group-lg {
+  > .avatar {
+    @include avatar-size($avatar-size-lg);
+    font-size: $font-size-lg;
+  }
+
+  .avatar + .avatar {
+    margin-left: - $avatar-size-lg * 0.25;
+  }
+}

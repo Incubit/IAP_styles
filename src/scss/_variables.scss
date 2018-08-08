@@ -659,7 +659,7 @@ $nav-divider-margin-y:              ($spacer / 2);
 
 // Navbar
 
-$navbar-padding-y:                  ($spacer / 2);
+$navbar-padding-y:                  $spacer * 0.75;
 $navbar-padding-x:                  $spacer;
 
 $navbar-nav-link-padding-x:         .5rem;
@@ -1006,5 +1006,11 @@ $depth-box-shadows: (
 // Layouts
 
 $layout-left-sidebar-width: 260px;
-$layout-header-height: 56px;
-$layout-footer-height: 56px;
+$layout-header-height: $spacer * 4;
+$layout-footer-height: $spacer * 4;
+
+// Avatar
+
+$avatar-size: $font-size-base * 2.375;
+$avatar-size-sm: $font-size-base * 1.875;
+$avatar-size-lg: $font-size-base * 2.875;
