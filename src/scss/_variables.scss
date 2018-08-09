@@ -603,7 +603,7 @@ $dropdown-padding-y:                .5rem;
 $dropdown-spacer:                   .125rem;
 $dropdown-bg:                       $white;
 $dropdown-border-color:             $border-color;
-$dropdown-border-radius:            calc($border-radius / 2);
+$dropdown-border-radius:            $border-radius / 2;
 $dropdown-border-width:             $border-width;
 $dropdown-divider-bg:               $border-color;
 $dropdown-box-shadow:               0 .5rem 1rem rgba($black, .175);

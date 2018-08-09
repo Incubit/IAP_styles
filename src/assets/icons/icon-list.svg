@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-list</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="icon-list" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M2,5.84 L22,5.84 C22.5522847,5.84 23,5.44601058 23,4.96 C23,4.47398942 22.5522847,4.08 22,4.08 L2,4.08 C1.44771525,4.08 1,4.47398942 1,4.96 C1,5.44601058 1.44771525,5.84 2,5.84 L2,5.84 Z" id="Shape" fill="#B1BDC8"></path>
+        <path d="M22,11.12 L2,11.12 C1.44771525,11.12 1,11.5139894 1,12 C1,12.4860106 1.44771525,12.88 2,12.88 L22,12.88 C22.5522847,12.88 23,12.4860106 23,12 C23,11.5139894 22.5522847,11.12 22,11.12 L22,11.12 Z" id="Shape" fill="#B1BDC8"></path>
+        <path d="M22,18.16 L2,18.16 C1.44771525,18.16 1,18.5539894 1,19.04 C1,19.5260106 1.44771525,19.92 2,19.92 L22,19.92 C22.5522847,19.92 23,19.5260106 23,19.04 C23,18.5539894 22.5522847,18.16 22,18.16 L22,18.16 Z" id="Shape" fill="#B1BDC8"></path>
+    </g>
+</svg>
