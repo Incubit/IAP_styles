@@ -17,6 +17,11 @@
     font-weight: $font-weight-bold;
     padding: 1.5rem;
 
+    border-top-width: 0;
+    border-right-width: 0;
+    border-bottom-width: 0;
+    border-left-width: 0;
+
     &:hover,
     &:focus {
       color: $blue-gray;
@@ -38,7 +43,8 @@
   .nav-link {
     &.active {
       border-bottom: 6px solid $brand-global;
-      border-image: linear-gradient(to right, $brand-gradient-global-0, $brand-gradient-global-1) 6;
+      border-image: linear-gradient(to right, $brand-gradient-global-0, $brand-gradient-global-1);
+      border-image-slice: 1;
     }
   }
 }
@@ -47,7 +53,8 @@
   .nav-link {
     &.active {
       border-bottom: 6px solid $brand-ai;
-      border-image: linear-gradient(to right, $brand-gradient-ai-0, $brand-gradient-ai-1) 6;
+      border-image: linear-gradient(to right, $brand-gradient-ai-0, $brand-gradient-ai-1);
+      border-image-slice: 1;
     }
   }
 }

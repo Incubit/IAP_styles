@@ -3,6 +3,54 @@
   background: $blue-gray-light;
   width: $font-size-base * 1.5;
   height: $font-size-base * 1.5;
+
+  &.iap-icon-sm {
+    width: $font-size-base * 1.5 * .825;
+    height: $font-size-base * 1.5 * .825;
+  }
+
+  &.iap-icon-lg {
+    width: $font-size-base * 1.5 * 1.25;
+    height: $font-size-base * 1.5 * 1.25;
+  }
+
+  &.iap-icon-global {
+    background: $brand-global;
+  }
+
+  &.iap-icon-ai {
+    background: $brand-ai;
+  }
+}
+
+a.iap-icon-link {
+  &:hover,
+  &:focus
+  &.active {
+    .iap-icon {
+      background: $blue-gray;
+    }
+  }
+
+  &.iap-icon-link-global {
+    &:hover,
+    &:focus
+    &.active {
+      .iap-icon {
+        background: $brand-global;
+      }
+    }
+  }
+
+  &.iap-icon-link-ai {
+    &:hover,
+    &:focus
+    &.active {
+      .iap-icon {
+        background: $brand-ai;
+      }
+    }
+  }
 }
 
 .iap-icon-grid {

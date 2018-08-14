@@ -95,12 +95,6 @@
   }
 }
 
-.table-selectable {
-  tbody tr.active {
-    background-color: $table-hover-bg;
-  }
-}
-
 // Table backgrounds
 //
 // Exact selectors below required to override `.table-striped` and prevent
@@ -161,12 +155,6 @@
       @include hover {
         background-color: $table-dark-hover-bg;
       }
-    }
-  }
-
-  &.table-selectable {
-    tbody tr.active {
-      background-color: $table-dark-hover-bg;
     }
   }
 }

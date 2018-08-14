@@ -1,4 +1,4 @@
 @mixin icon-variant($value) {
   mask: url("data:image/svg+xml;base64,#{$value}") no-repeat 50% 50%;
-  mask-size: cover;
+  vertical-align: top;
 }
