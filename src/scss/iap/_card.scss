@@ -1,0 +1,51 @@
+.iap-service-card {
+  background: linear-gradient(to bottom, #fdfdfd, #fbfbfb);
+  color: $slate-gray;
+  text-decoration: none;
+  border: none;
+
+  &:hover {
+    color: $slate-gray;
+    text-decoration: none;
+  }
+
+  width: 300px;
+  height: 410px;
+
+  .card-img-top {
+    height: 220px;
+    padding-top: $spacer * 5;
+  }
+
+  .card-body {
+    padding-top: $spacer * 3.5;
+    font-size: $font-size-base * 1.125;
+    font-weight: $font-weight-bold;
+    text-align: center;
+  }
+
+  .card-footer {
+    height: 20px;
+    background: $dark;
+  }
+}
+
+.iap-service-card-annotation .card-footer {
+  background: linear-gradient(to right, $brand-gradient-global-0, $brand-gradient-global-1);
+}
+
+.iap-service-card-inspection .card-footer {
+  background: linear-gradient(to right, $brand-gradient-ai-0, $brand-gradient-ai-1);
+}
+
+.iap-service-card-row {
+  margin-right: - $spacer * 2.5;
+  margin-left: - $spacer * 2.5;
+
+  .col {
+    flex-grow: 0;
+    padding-right: $spacer * 2.5;
+    padding-bottom: $spacer * 2;
+    padding-left: $spacer * 2.5;
+  }
+}

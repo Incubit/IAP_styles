@@ -4554,6 +4554,25 @@ input[type="button"].btn-block {
   border-top-right-radius: 0;
 }
 
+.card-hover {
+  box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .card-hover {
+    transition: none;
+  }
+}
+
+.card-hover:hover:not(.disabled), .card-hover:focus:not(.disabled), .card-hover.active {
+  box-shadow: 0px 5px 5px -3px rgba(0, 0, 0, 0.2), 0px 8px 10px 1px rgba(0, 0, 0, 0.14), 0px 3px 14px 2px rgba(0, 0, 0, 0.12);
+}
+
+.card-hover.disabled {
+  opacity: 0.65;
+}
+
 .breadcrumb {
   display: flex;
   flex-wrap: wrap;
@@ -9498,7 +9517,7 @@ button.bg-gray-900:focus {
   background: #319097;
 }
 
-.header-nav .nav-link.nav-link-with-avatar {
+.header-nav .nav-link-with-avatar {
   padding-top: 0.0625rem;
   padding-bottom: 0.0625rem;
 }
@@ -10058,6 +10077,57 @@ button.bg-gray-900:focus {
 .content-table.content-table-ai tbody tr:hover td > a:not(.iap-icon-link):not(.dropdown-link):hover .iap-icon,
 .content-table.content-table-ai tbody tr.table-active td > a:not(.iap-icon-link):not(.dropdown-link):hover .iap-icon {
   background: #7040e5;
+}
+
+.iap-service-card {
+  background: linear-gradient(to bottom, #fdfdfd, #fbfbfb);
+  color: #606366;
+  text-decoration: none;
+  border: none;
+  width: 300px;
+  height: 410px;
+}
+
+.iap-service-card:hover {
+  color: #606366;
+  text-decoration: none;
+}
+
+.iap-service-card .card-img-top {
+  height: 220px;
+  padding-top: 5rem;
+}
+
+.iap-service-card .card-body {
+  padding-top: 3.5rem;
+  font-size: 1.125rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.iap-service-card .card-footer {
+  height: 20px;
+  background: #32485c;
+}
+
+.iap-service-card-annotation .card-footer {
+  background: linear-gradient(to right, #62c4cc, #23a0d0);
+}
+
+.iap-service-card-inspection .card-footer {
+  background: linear-gradient(to right, #978eda, #77afd9);
+}
+
+.iap-service-card-row {
+  margin-right: -2.5rem;
+  margin-left: -2.5rem;
+}
+
+.iap-service-card-row .col {
+  flex-grow: 0;
+  padding-right: 2.5rem;
+  padding-bottom: 2rem;
+  padding-left: 2.5rem;
 }
 
 span.avatar {

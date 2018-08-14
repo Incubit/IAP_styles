@@ -975,8 +975,11 @@ $print-body-min-width:              map-get($grid-breakpoints, "lg");
 
 
 //
-// IAP styles.
+// Additional
 //
+
+$card-disabled-opacity: .65;
+$card-transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 
 // Boxshadow for depth
 $depth-box-shadow-1: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
@@ -1003,6 +1006,10 @@ $depth-box-shadows: (
   24: $depth-box-shadow-24
 );
 
+
+//
+// IAP styles.
+//
 
 // Layouts
 
