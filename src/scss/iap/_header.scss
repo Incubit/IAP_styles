@@ -28,11 +28,29 @@
 
     &:hover,
     &:focus {
-      color: darkn($primary, 15%);
+      color: darken($primary, 15%);
     }
 
     &.disabled {
       color: $gray-400
     }
+  }
+
+  .nav-link {
+    .iap-icon {
+      background: $primary;
+    }
+
+    &:hover,
+    &:focus {
+      .iap-icon {
+        background: darken($primary, 15%);
+      }    
+    }
+  }
+
+  .nav-link.nav-link-with-avatar {
+    padding-top: $spacer * (2.5 - 2.375) * .5;
+    padding-bottom: $spacer * (2.5 - 2.375) * .5;
   }
 }

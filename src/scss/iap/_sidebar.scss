@@ -17,12 +17,24 @@
   font-weight: $font-weight-bold;
   text-decoration: none;
 
+  &:hover,
+  &:focus {
+    text-decoration: none;
+    color: darken($gray-800, 15%);
+  }
+
   small {
     display: block;
     color: $blue-gray;
     font-size: $font-size-base;
     font-weight: $font-weight-normal;
     line-height: 1;
+
+    &:hover,
+    &:focus {
+      text-decoration: none;
+      color: darken($blue-gray, 15%);
+    }
   }
 }
 
@@ -37,7 +49,12 @@
 
   .nav-link {
     color: $blue-gray-light;
-    padding: 0.75rem 2rem;
+    padding: .75rem 2rem;
+
+    border-top-width: 0;
+    border-right-width: 0;
+    border-bottom-width: 0;
+    border-left-width: 0;
 
     &:hover,
     &:focus {
@@ -55,6 +72,11 @@
 }
 
 .sidebar-nav .nav-item > .nav-drilldown {
+  border-top-width: 0;
+  border-right-width: 0;
+  border-bottom-width: 0;
+  border-left-width: 0;
+
   > .nav-link {
     cursor: pointer;
 
@@ -87,7 +109,7 @@
       margin-left: calc(0.75rem - 5px);
 
       & .nav-link.active {
-        border-left: none;
+        border-left-width: 0;
         padding-left: 2rem;
       }
     }
@@ -108,7 +130,8 @@
   .nav-link {
     &.active {
       border-left: 5px solid $brand-global;
-      border-image: linear-gradient(to bottom, $brand-gradient-global-0, $brand-gradient-global-1) 5;
+      border-image: linear-gradient(to bottom, $brand-gradient-global-0, $brand-gradient-global-1);
+      border-image-slice: 1;
     }
   }
 }
@@ -123,7 +146,8 @@
 
   &.active {
     border-left: 5px solid $brand-global;
-    border-image: linear-gradient(to bottom, $brand-gradient-global-0, $brand-gradient-global-1) 5;
+    border-image: linear-gradient(to bottom, $brand-gradient-global-0, $brand-gradient-global-1);
+    border-image-slice: 1;
   }
 }
 
@@ -132,7 +156,8 @@
   .nav-link {
     &.active {
       border-left: 5px solid $brand-ai;
-      border-image: linear-gradient(to bottom, $brand-gradient-ai-0, $brand-gradient-ai-1) 5;
+      border-image: linear-gradient(to bottom, $brand-gradient-ai-0, $brand-gradient-ai-1);
+      border-image-slice: 1;
     }
   }
 }
@@ -147,6 +172,7 @@
 
   &.active {
     border-left: 5px solid $brand-ai;
-    border-image: linear-gradient(to bottom, $brand-gradient-ai-0, $brand-gradient-ai-1) 5;
+    border-image: linear-gradient(to bottom, $brand-gradient-ai-0, $brand-gradient-ai-1);
+    border-image-slice: 1;
   }
 }

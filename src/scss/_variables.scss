@@ -146,7 +146,8 @@ $spacers: (
   2: ($spacer * .5),
   3: $spacer,
   4: ($spacer * 1.5),
-  5: ($spacer * 3)
+  5: ($spacer * 3),
+  6: ($spacer * 5)
 );
 
 // This variable affects the `.h-*` and `.w-*` classes.
@@ -258,8 +259,8 @@ $font-family-base:            $font-family-sans-serif;
 // stylelint-enable value-keyword-case
 
 $font-size-base:              1rem; // Assumes the browser default, typically `16px`
-$font-size-lg:                ($font-size-base * 1.25);
-$font-size-sm:                ($font-size-base * .875);
+$font-size-lg:                $font-size-base * 1.25;
+$font-size-sm:                $font-size-base * .875;
 
 $font-weight-lighter:         lighter;
 $font-weight-light:           300;
@@ -277,7 +278,7 @@ $h4-font-size:                $font-size-base * 1.25;
 $h5-font-size:                $font-size-base * 1.125;
 $h6-font-size:                $font-size-base;
 
-$headings-margin-bottom:      ($spacer / 2);
+$headings-margin-bottom:      $spacer * .5;
 $headings-font-family:        inherit;
 $headings-font-weight:        $font-weight-normal;
 $headings-line-height:        1.2;
@@ -294,7 +295,7 @@ $display3-weight:             300;
 $display4-weight:             300;
 $display-line-height:         $headings-line-height;
 
-$lead-font-size:              ($font-size-base * 1.25);
+$lead-font-size:              $font-size-base * 1.25;
 $lead-font-weight:            300;
 
 $small-font-size:             80%;
@@ -302,7 +303,7 @@ $small-font-size:             80%;
 $text-muted:                  $blue-gray-light;
 
 $blockquote-small-color:      $blue-gray-light;
-$blockquote-font-size:        ($font-size-base * 1.25);
+$blockquote-font-size:        $font-size-base * 1.25;
 
 $hr-border-color:             $gray-300;
 $hr-border-width:             $border-width;
@@ -433,9 +434,9 @@ $input-border-color:                    $blue-gray-light;
 $input-border-width:                    $input-btn-border-width;
 $input-box-shadow:                      inset 0 1px 1px rgba($black, .075);
 
-$input-border-radius:                   $border-radius / 2;
-$input-border-radius-lg:                $border-radius-lg / 2;
-$input-border-radius-sm:                $border-radius-sm / 2;
+$input-border-radius:                   $border-radius * .5;
+$input-border-radius-lg:                $border-radius-lg * .5;
+$input-border-radius-sm:                $border-radius-sm * .5;
 
 $input-focus-bg:                        $input-bg;
 $input-focus-border-color:              $component-active-bg;
@@ -468,7 +469,7 @@ $form-check-input-margin-x:             .25rem;
 $form-check-inline-margin-x:            .75rem;
 $form-check-inline-input-margin-x:      .3125rem;
 
-$form-group-margin-bottom:              1rem;
+$form-group-margin-bottom:              $spacer * 2;
 
 $input-group-addon-color:               $input-color;
 $input-group-addon-bg:                  $input-border-color;
@@ -525,7 +526,7 @@ $custom-select-background:          $custom-select-indicator no-repeat right $cu
 
 $custom-select-border-width:        $input-btn-border-width;
 $custom-select-border-color:        $input-border-color;
-$custom-select-border-radius:       $border-radius / 2;
+$custom-select-border-radius:       $border-radius * .5;
 $custom-select-box-shadow:          inset 0 1px 2px rgba($black, .075);
 
 $custom-select-focus-border-color:  $input-focus-border-color;
@@ -603,7 +604,7 @@ $dropdown-padding-y:                .5rem;
 $dropdown-spacer:                   .125rem;
 $dropdown-bg:                       $white;
 $dropdown-border-color:             $border-color;
-$dropdown-border-radius:            $border-radius / 2;
+$dropdown-border-radius:            $border-radius * .5;
 $dropdown-border-width:             $border-width;
 $dropdown-divider-bg:               $border-color;
 $dropdown-box-shadow:               0 .5rem 1rem rgba($black, .175);
@@ -659,7 +660,7 @@ $nav-divider-margin-y:              ($spacer / 2);
 
 // Navbar
 
-$navbar-padding-y:                  $spacer * 0.75;
+$navbar-padding-y:                  $spacer * .75;
 $navbar-padding-x:                  $spacer;
 
 $navbar-nav-link-padding-x:         .5rem;
@@ -740,7 +741,7 @@ $card-bg:                           $white;
 
 $card-img-overlay-padding:          1.25rem;
 
-$card-group-margin:                 ($grid-gutter-width / 2);
+$card-group-margin:                 $grid-gutter-width * .5;
 $card-deck-margin:                  $card-group-margin;
 
 $card-columns-count:                3;
@@ -856,10 +857,10 @@ $alert-color-level:                 6;
 
 // Progress bars
 
-$progress-height:                   0.25rem;
-$progress-font-size:                ($font-size-base * .75);
+$progress-height:                   .25rem;
+$progress-font-size:                $font-size-base * .75;
 $progress-bg:                       $gray-400;
-$progress-border-radius:            $border-radius / 2;
+$progress-border-radius:            $border-radius * .5;
 $progress-box-shadow:               inset 0 .1rem .1rem rgba($black, .1);
 $progress-bar-color:                $white;
 $progress-bar-bg:                   $primary;
