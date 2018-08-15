@@ -10130,6 +10130,29 @@ button.bg-gray-900:focus {
   padding-left: 2.5rem;
 }
 
+.content-modal .modal-header {
+  flex-direction: column;
+  align-items: center;
+  background: transparent;
+  border-bottom: none;
+}
+
+.content-modal .modal-title {
+  margin-top: 1.5rem;
+  font-size: 1.625rem;
+  text-align: center;
+}
+
+.content-modal .modal-body {
+  padding: 2rem 4rem;
+}
+
+.content-modal .modal-footer {
+  justify-content: center;
+  padding-bottom: 4rem;
+  border-top: none;
+}
+
 span.avatar {
   display: inline-block;
   background: linear-gradient(to bottom, #b1bdc8, #dee3e8);
