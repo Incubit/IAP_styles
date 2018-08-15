@@ -1,9 +1,8 @@
-.dropdown .dropdown-link {
-  color: $body-color;
-  text-decoration: none;
+.dropdown-link {
   cursor: pointer;
 
-  @include caret;
+  color: $body-color;
+  text-decoration: none;
 
   &:after {
     margin-left: .5rem;
@@ -16,6 +15,39 @@
 
     &:after {
       color: darken($primary, 15%);
+    }
+  }
+}
+
+.dropdown-select {
+  cursor: pointer;
+
+  @include caret;
+
+  &:after {
+    margin-left: .5rem;
+    color: $primary;
+  }
+
+  .custom-select {
+    cursor: pointer;
+    background: transparent;
+    color: $body-color;
+    width: auto;
+    height: auto;
+    padding: 0;
+    border: none;
+    vertical-align: baseline;
+  }
+
+  &:hover,
+  &:focus {
+    &:after {
+      color: darken($primary, 15%);
+    }
+
+    .custom-select {
+      color: darken($body-color, 15%);
     }
   }
 }
