@@ -12,13 +12,12 @@
   width: 300px;
   height: 410px;
 
-  .card-img-top {
-    height: 220px;
-    padding-top: $spacer * 5;
+  .card-body-img {
+    height: 265px;
+    padding-top: $spacer * 4.0;
   }
 
   .card-body {
-    padding-top: $spacer * 3.5;
     font-size: $font-size-base * 1.125;
     font-weight: $font-weight-bold;
     text-align: center;

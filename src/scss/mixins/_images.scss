@@ -1,0 +1,3 @@
+@mixin image-variant($value) {
+  background: url("data:image/svg+xml;base64,#{$value}");
+}
