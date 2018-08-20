@@ -1,0 +1,5 @@
+@if $enable-grid-classes {
+  .container-sm {
+    @include make-container-max-widths($container-sm-max-widths, $grid-breakpoints);
+  }
+}

@@ -210,6 +210,13 @@ $container-max-widths: (
   xl: 1140px
 );
 
+$container-sm-max-widths: (
+  sm: 360px,
+  md: 540px,
+  lg: 720px,
+  xl: 960px
+);
+
 @include _assert-ascending($container-max-widths, "$container-max-widths");
 
 

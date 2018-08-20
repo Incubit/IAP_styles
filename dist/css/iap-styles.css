@@ -1368,6 +1368,30 @@ pre code {
   }
 }
 
+@media (min-width: 576px) {
+  .container-sm {
+    max-width: 360px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container-sm {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container-sm {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container-sm {
+    max-width: 960px;
+  }
+}
+
 .table {
   width: 100%;
   max-width: 100%;
