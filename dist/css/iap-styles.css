@@ -20,8 +20,10 @@
   --teal: #5ac6af;
   --cyan: #4fbdc6;
   --white: #ffffff;
+  --gray-light: #b1bdc8;
   --gray: #647789;
   --gray-dark: #32485c;
+  --slate-gray: #606366;
   --primary: #4fbdc6;
   --secondary: #b1bdc8;
   --success: #1387ba;
@@ -9159,6 +9161,198 @@ button.bg-gray-900:focus {
   box-shadow: 0px 11px 15px -7px rgba(0, 0, 0, 0.2), 0px 24px 38px 3px rgba(0, 0, 0, 0.14), 0px 9px 46px 8px rgba(0, 0, 0, 0.12) !important;
 }
 
+.text-gray-100 {
+  color: #fafafa !important;
+}
+
+a.text-gray-100:hover, a.text-gray-100:focus {
+  color: #e1e1e1 !important;
+}
+
+.text-gray-200 {
+  color: #f5f5f5 !important;
+}
+
+a.text-gray-200:hover, a.text-gray-200:focus {
+  color: gainsboro !important;
+}
+
+.text-gray-300 {
+  color: #ededed !important;
+}
+
+a.text-gray-300:hover, a.text-gray-300:focus {
+  color: #d4d4d4 !important;
+}
+
+.text-gray-400 {
+  color: #d0d0d0 !important;
+}
+
+a.text-gray-400:hover, a.text-gray-400:focus {
+  color: #b7b7b7 !important;
+}
+
+.text-gray-500 {
+  color: #b4b4b4 !important;
+}
+
+a.text-gray-500:hover, a.text-gray-500:focus {
+  color: #9b9b9b !important;
+}
+
+.text-gray-600 {
+  color: #979797 !important;
+}
+
+a.text-gray-600:hover, a.text-gray-600:focus {
+  color: #7e7e7e !important;
+}
+
+.text-gray-700 {
+  color: #646464 !important;
+}
+
+a.text-gray-700:hover, a.text-gray-700:focus {
+  color: #4b4b4b !important;
+}
+
+.text-gray-800 {
+  color: #4a4a4a !important;
+}
+
+a.text-gray-800:hover, a.text-gray-800:focus {
+  color: #313131 !important;
+}
+
+.text-gray-900 {
+  color: #333333 !important;
+}
+
+a.text-gray-900:hover, a.text-gray-900:focus {
+  color: #1a1a1a !important;
+}
+
+.text-blue {
+  color: #23a0d0 !important;
+}
+
+a.text-blue:hover, a.text-blue:focus {
+  color: #1c7ea4 !important;
+}
+
+.text-indigo {
+  color: #1387ba !important;
+}
+
+a.text-indigo:hover, a.text-indigo:focus {
+  color: #0e658c !important;
+}
+
+.text-purple {
+  color: #a283ee !important;
+}
+
+a.text-purple:hover, a.text-purple:focus {
+  color: #8056e8 !important;
+}
+
+.text-pink {
+  color: #f0516f !important;
+}
+
+a.text-pink:hover, a.text-pink:focus {
+  color: #ec2248 !important;
+}
+
+.text-red {
+  color: #ff6b6b !important;
+}
+
+a.text-red:hover, a.text-red:focus {
+  color: #ff3838 !important;
+}
+
+.text-orange {
+  color: #f5a623 !important;
+}
+
+a.text-orange:hover, a.text-orange:focus {
+  color: #db8c0a !important;
+}
+
+.text-yellow {
+  color: #fbd249 !important;
+}
+
+a.text-yellow:hover, a.text-yellow:focus {
+  color: #fac617 !important;
+}
+
+.text-green {
+  color: #429321 !important;
+}
+
+a.text-green:hover, a.text-green:focus {
+  color: #2f6918 !important;
+}
+
+.text-teal {
+  color: #5ac6af !important;
+}
+
+a.text-teal:hover, a.text-teal:focus {
+  color: #3db098 !important;
+}
+
+.text-cyan {
+  color: #4fbdc6 !important;
+}
+
+a.text-cyan:hover, a.text-cyan:focus {
+  color: #37a2ab !important;
+}
+
+.text-white {
+  color: #ffffff !important;
+}
+
+a.text-white:hover, a.text-white:focus {
+  color: #e6e6e6 !important;
+}
+
+.text-gray-light {
+  color: #b1bdc8 !important;
+}
+
+a.text-gray-light:hover, a.text-gray-light:focus {
+  color: #93a4b3 !important;
+}
+
+.text-gray {
+  color: #647789 !important;
+}
+
+a.text-gray:hover, a.text-gray:focus {
+  color: #4e5d6c !important;
+}
+
+.text-gray-dark {
+  color: #32485c !important;
+}
+
+a.text-gray-dark:hover, a.text-gray-dark:focus {
+  color: #202e3b !important;
+}
+
+.text-slate-gray {
+  color: #606366 !important;
+}
+
+a.text-slate-gray:hover, a.text-slate-gray:focus {
+  color: #474a4c !important;
+}
+
 @media print {
   *,
   *::before,
@@ -10319,12 +10513,20 @@ span.avatar.avatar-white {
   background: linear-gradient(to bottom, #ffffff, white);
 }
 
+span.avatar.avatar-gray-light {
+  background: linear-gradient(to bottom, #b1bdc8, #dee3e8);
+}
+
 span.avatar.avatar-gray {
   background: linear-gradient(to bottom, #647789, #8d9dac);
 }
 
 span.avatar.avatar-gray-dark {
   background: linear-gradient(to bottom, #32485c, #4d6f8e);
+}
+
+span.avatar.avatar-slate-gray {
+  background: linear-gradient(to bottom, #606366, #86898d);
 }
 
 img.avatar {
