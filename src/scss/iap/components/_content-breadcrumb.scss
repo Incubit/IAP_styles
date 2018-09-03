@@ -1,0 +1,31 @@
+.breadcrumb {
+  &.content-breadcrumb {
+    padding: 0;
+    margin-bottom: $breadcrumb-margin-bottom;
+    color: $slate-gray;
+    background-color: transparent;;
+    border-radius: 0;
+
+    .breadcrumb-item {
+      a {
+        color: $slate-gray;
+        text-decoration: none;
+
+        &:hover {
+          color: darken($slate-gray, 7.5%);
+        }
+      }
+
+      + .breadcrumb-item {
+        &::before {
+          color: $slate-gray;
+          content: ">";
+        }
+      }
+
+      &.active {
+        color: $slate-gray;
+      }
+    }
+  }
+}
