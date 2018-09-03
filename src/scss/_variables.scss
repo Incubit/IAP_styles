@@ -983,10 +983,7 @@ $print-page-size:                   a3;
 $print-body-min-width:              map-get($grid-breakpoints, "lg");
 
 
-//
-// Additional
-//
-
+// Card additional
 $card-disabled-opacity: .65;
 $card-transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 
@@ -1015,16 +1012,14 @@ $depth-box-shadows: (
   24: $depth-box-shadow-24
 );
 
-
-//
-// IAP styles.
-//
-
 // Layouts
 
 $layout-left-sidebar-width: 260px;
 $layout-header-height: $spacer * 4;
 $layout-footer-height: $spacer * 4;
+
+$layout-playground-header-height: $spacer * 8;
+$layout-playground-right-sidebar-width: 320px;
 
 // Avatar
 
