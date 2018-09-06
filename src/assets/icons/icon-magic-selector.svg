@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-magic-selector</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="icon-magic-selector" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-4" transform="translate(2.000000, 1.000000)" stroke="#32485C">
+            <path d="M11.7255595,14.9935721 L11.6624557,11.3447491 L15.188498,13.1541802 L13.0528494,10.0826591 L17.0820668,10.1340874 L13.5371034,8.43561509 L17.0820668,6.7371428 L13.0528494,6.78857105 L15.188498,3.71705003 L11.6624557,5.52648113 L11.7255595,1.87765809 L9.67005827,5.04393782 L7.614557,1.87765809 L7.67766082,5.52648113 L4.15161858,3.71705003 L6.28726712,6.78857105 L2.25804976,6.7371428 L5.80301314,8.43561509 L2.25804976,10.1340874 L6.28726712,10.0826591 L4.15161858,13.1541802 L7.67766082,11.3447491 L7.614557,14.9935721 L9.67005827,11.8272924 L11.7255595,14.9935721 Z" id="Star-2" stroke-width="0.916666667"></path>
+            <path d="M9.08501355,13.8207932 C14.8936442,18.7578981 17.3659544,20.8530573 16.5019443,20.1062708" id="Line-2" stroke-width="1.83333333" stroke-linecap="square" transform="translate(12.877387, 17.037120) rotate(24.000000) translate(-12.877387, -17.037120) "></path>
+        </g>
+    </g>
+</svg>

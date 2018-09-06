@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-pencil-eraser</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="icon-pencil-eraser" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="50--Eraser--(Outline)" transform="translate(6.500000, 2.000000)" stroke="#32485C" stroke-width="1.81818182">
+            <path d="M8.69090909,17.2727273 L2.21909091,17.2727273 C0.993636364,17.2727273 0,16.2790909 0,15.0545455 L0,10 L10.9090909,10 L10.9090909,15.0545455 C10.9090909,16.2790909 9.91636364,17.2727273 8.69090909,17.2727273 Z" id="Stroke-386"></path>
+            <path d="M10.9090909,10 L0,10 L0,1.81818182 C0,0.813636364 0.813636364,0 1.81818182,0 L9.09090909,0 C10.0954545,0 10.9090909,0.813636364 10.9090909,1.81818182 L10.9090909,10 Z" id="Stroke-387"></path>
+            <path d="M8.69090909,17.4933155 L2.21909091,17.4933155 C0.993636364,17.4933155 0,16.5800468 0,15.4545455 L0,17.9612299 C0,19.0867313 0.993636364,20 2.21909091,20 L8.69090909,20 C9.91636364,20 10.9090909,19.0867313 10.9090909,17.9612299 L10.9090909,15.4545455 C10.9090909,16.5800468 9.91636364,17.4933155 8.69090909,17.4933155 Z" id="Stroke-388"></path>
+        </g>
+    </g>
+</svg>

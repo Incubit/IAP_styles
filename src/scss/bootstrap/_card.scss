@@ -13,3 +13,11 @@
     opacity: $card-disabled-opacity;
   }
 }
+
+.card-body-table {
+  padding: .5rem 0;
+
+  .table {
+    margin-bottom: 0;
+  }
+}
