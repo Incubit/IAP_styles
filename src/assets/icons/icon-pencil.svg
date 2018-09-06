@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-pencil</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="icon-pencil" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="42--Pencil--(Outline)" transform="translate(2.000000, 2.000000)" stroke="#32485C" stroke-width="1.81818182">
+            <polygon id="Stroke-352" points="7.25381818 16.6031818 3.39654545 12.7459091 13.682 2.46136364 17.5392727 6.31772727"></polygon>
+            <polygon id="Stroke-353" points="0 20 1.46818182 14.6745455 5.32545455 18.5318182"></polygon>
+            <polygon id="Stroke-354" points="5.32536364 18.5316364 1.46809091 14.6743636 3.39718182 12.7461818 7.25354545 16.6034545"></polygon>
+            <path d="M17.539,6.318 L13.6817273,2.46072727 L15.6108182,0.532545455 C16.3208182,-0.177454545 17.4717273,-0.177454545 18.1817273,0.532545455 L19.4671818,1.818 C20.1771818,2.528 20.1771818,3.67981818 19.4671818,4.38981818 L17.539,6.318 Z" id="Stroke-355"></path>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-alert</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="icon-alert" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icon_Alert" transform="translate(1.000000, 1.000000)" fill="#B1BDC8">
+            <path d="M11,0 C4.92486775,0 0,4.92486775 0,11 C0,17.0751322 4.92486775,22 11,22 C17.0751322,22 22,17.0751322 22,11 C22,4.92486775 17.0751322,0 11,0 L11,0 Z M11,20.4285714 C5.79274379,20.4285714 1.57142857,16.2072562 1.57142857,11 C1.57142857,5.79274379 5.79274379,1.57142857 11,1.57142857 C16.2072562,1.57142857 20.4285714,5.79274379 20.4285714,11 C20.4285714,16.2072562 16.2072562,20.4285714 11,20.4285714 Z" id="Shape"></path>
+            <path d="M11,4.4 C10.5139894,4.4 10.12,4.74763772 10.12,5.17647059 L10.12,12.4235294 C10.12,12.8523623 10.5139894,13.2 11,13.2 C11.4860106,13.2 11.88,12.8523623 11.88,12.4235294 L11.88,5.17647059 C11.88,4.74763772 11.4860106,4.4 11,4.4 Z" id="Shape"></path>
+            <circle id="Oval" cx="11" cy="15.84" r="1"></circle>
+        </g>
+    </g>
+</svg>
