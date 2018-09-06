@@ -25,7 +25,7 @@
 
 a.iap-icon-link {
   &:hover,
-  &:focus
+  &:focus,
   &.active {
     .iap-icon {
       background: $blue-gray;
@@ -34,7 +34,7 @@ a.iap-icon-link {
 
   &.iap-icon-link-global {
     &:hover,
-    &:focus
+    &:focus,
     &.active {
       .iap-icon {
         background: $brand-global;
@@ -44,7 +44,7 @@ a.iap-icon-link {
 
   &.iap-icon-link-ai {
     &:hover,
-    &:focus
+    &:focus,
     &.active {
       .iap-icon {
         background: $brand-ai;
