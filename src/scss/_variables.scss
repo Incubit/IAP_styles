@@ -553,7 +553,7 @@ $custom-select-font-size-lg:        $font-size-lg;
 $custom-select-height-lg:           $input-height-lg;
 
 $custom-range-track-width:          100%;
-$custom-range-track-height:         .5rem;
+$custom-range-track-height:         .25rem;
 $custom-range-track-cursor:         pointer;
 $custom-range-track-bg:             $gray-400;
 $custom-range-track-border-radius:  1rem;
@@ -567,8 +567,8 @@ $custom-range-thumb-border-radius:           1rem;
 $custom-range-thumb-box-shadow:              0 .1rem .25rem rgba($black, .1);
 $custom-range-thumb-focus-box-shadow:        0 0 0 1px $body-bg, $input-btn-focus-box-shadow;
 $custom-range-thumb-focus-box-shadow-width:  $input-btn-focus-width; // For focus box shadow issue in IE/Edge
-$custom-range-thumb-active-bg:               lighten($component-active-bg, 35%);
-$custom-range-thumb-disabled-bg:             $gray-500;
+$custom-range-thumb-active-bg:               darken($custom-range-thumb-bg, 10%);
+$custom-range-thumb-disabled-bg:             $gray-600;
 
 $custom-file-height:                $input-height;
 $custom-file-height-inner:          $input-height-inner;
