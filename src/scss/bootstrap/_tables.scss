@@ -14,10 +14,11 @@
     vertical-align: top;
     border-top: $table-border-width solid $table-border-color;
   }
-
-  th:first-of-type,
-  td:first-of-type {
-    border-top: none;
+  
+  tbody tr:first-of-type {
+    th, td {
+      border-top: none;
+    }
   }
 
   thead th {
