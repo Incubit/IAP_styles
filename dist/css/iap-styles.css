@@ -10847,7 +10847,11 @@ a.iap-icon-link.iap-icon-link-ai:hover .iap-icon, a.iap-icon-link.iap-icon-link-
   background: #4fbdc6;
 }
 
-.btn:disabled .iap-icon, .btn.disabled .iap-icon {
+.btn.playground-toolbar-btn:disabled, .btn.playground-toolbar-btn.disabled {
+  background: transparent;
+}
+
+.btn.playground-toolbar-btn:disabled .iap-icon, .btn.playground-toolbar-btn.disabled .iap-icon {
   background: #32485c;
 }
 
