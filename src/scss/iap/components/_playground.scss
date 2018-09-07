@@ -17,12 +17,13 @@
         background: $brand-global;
       }
     }
-  }
 
-  &:disabled,
-  &.disabled {
-    .iap-icon {
-      background: $blue-gray-dark;
+    &:disabled,
+    &.disabled {
+      background: transparent;
+      .iap-icon {
+        background: $blue-gray-dark;
+      }
     }
   }
 }
