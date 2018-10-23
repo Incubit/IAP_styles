@@ -43,6 +43,7 @@
     &.sidebar-nav {
       font-size: $font-size-base * 1.125;
       font-weight: $font-weight-bold;
+      flex-direction: column;
 
       .nav-link {
         color: $blue-gray-light;

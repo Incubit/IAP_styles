@@ -10370,6 +10370,7 @@ a.iap-icon-link.iap-icon-link-ai:hover .iap-icon, a.iap-icon-link.iap-icon-link-
 .left-sidebar .nav.sidebar-nav {
   font-size: 1.125rem;
   font-weight: 700;
+  flex-direction: column;
 }
 
 .left-sidebar .nav.sidebar-nav .nav-link {
