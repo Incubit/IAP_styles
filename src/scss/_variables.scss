@@ -87,6 +87,10 @@ $brand-ai:            $purple;
 $brand-gradient-ai-0: #978eda;
 $brand-gradient-ai-1: #77afd9;
 
+$brand-danger:            $red;
+$brand-gradient-danger-0: #ff5252;
+$brand-gradient-danger-1: #ff846b;
+
 $theme-colors: (
   "primary":   $primary,
   "secondary": $secondary,
@@ -98,17 +102,20 @@ $theme-colors: (
   "dark":      $dark,
 
   "brand-global": $brand-global,
-  "brand-ai":     $brand-ai
+  "brand-ai":     $brand-ai,
+  "brand-danger": $brand-danger
 );
 
 $brand-colors: (
   "global": $brand-global,
-  "ai":     $brand-ai
+  "ai":     $brand-ai,
+  "danger": $brand-danger
 );
 
 $brand-gradient-colors: (
   "global": $brand-gradient-global-0 $brand-gradient-global-1,
-  "ai":     $brand-gradient-ai-0 $brand-gradient-ai-1
+  "ai":     $brand-gradient-ai-0 $brand-gradient-ai-1,
+  "danger": $brand-gradient-danger-0 $brand-gradient-danger-1
 );
 
 // Set a specific jump point for requesting color jumps
