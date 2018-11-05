@@ -1,11 +1,13 @@
 @mixin button-brand-variant($gradient) {
   color: $white;
-  background: linear-gradient(to right, nth($gradient, 1), nth($gradient, 2));
+  background-color: nth($gradient, 2);
+  background-image: linear-gradient(to right, nth($gradient, 1), nth($gradient, 2));
   box-shadow: $depth-box-shadow-6;
 
   &:hover {
     color: $white;
-    background: linear-gradient(to right, darken(nth($gradient, 1), 7.5%), darken(nth($gradient, 2), 7.5%));
+    background-color: darken(nth($gradient, 2), 7.5%);
+    background-image: linear-gradient(to right, darken(nth($gradient, 1), 7.5%), darken(nth($gradient, 2), 7.5%));
     box-shadow: $depth-box-shadow-12;
   }
 
@@ -18,7 +20,8 @@
   &.disabled,
   &:disabled {
     color: $white;
-    background: linear-gradient(to right, nth($gradient, 1), nth($gradient, 2));
+    background-color: nth($gradient, 2);
+    background-image: linear-gradient(to right, nth($gradient, 1), nth($gradient, 2));
     border-color: transparent;
     box-shadow: $depth-box-shadow-3;
   }
@@ -27,7 +30,8 @@
   &:not(:disabled):not(.disabled).active,
   .show > &.dropdown-toggle {
     color: $white;
-    background: linear-gradient(to right, darken(nth($gradient, 1), 10%), darken(nth($gradient, 2), 10%));
+    background-color: darken(nth($gradient, 2), 10%);
+    background-image: linear-gradient(to right, darken(nth($gradient, 1), 10%), darken(nth($gradient, 2), 10%));
     border-color: transparent;
 
     &:focus {

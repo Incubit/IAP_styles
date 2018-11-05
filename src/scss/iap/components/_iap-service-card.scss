@@ -31,13 +31,15 @@
 
     &.iap-service-card-annotation {
       .card-footer {
-        background: linear-gradient(to right, $brand-gradient-global-0, $brand-gradient-global-1);
+        background-color: $brand-gradient-global-1;
+        background-image: linear-gradient(to right, $brand-gradient-global-0, $brand-gradient-global-1);
       }
     }
 
     &.iap-service-card-inspection {
       .card-footer {
-        background: linear-gradient(to right, $brand-gradient-ai-0, $brand-gradient-ai-1);
+        background-color: $brand-gradient-ai-1;
+        background-image: linear-gradient(to right, $brand-gradient-ai-0, $brand-gradient-ai-1);
       }
     }
   }
