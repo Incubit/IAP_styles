@@ -6,5 +6,6 @@
 }
 
 @mixin avatar-variant($value) {
-  background: linear-gradient(to bottom, $value, lighten($value, 15%));
+  background-color: lighten($value, 15%);
+  background-image: linear-gradient(to bottom, $value, lighten($value, 15%));
 }
