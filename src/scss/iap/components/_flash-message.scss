@@ -1,0 +1,15 @@
+.flash-message {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: $zindex-flash-message;
+
+  .alert {
+    margin: 1rem 1rem 0 1rem;
+    box-shadow: $depth-box-shadow-6;
+
+    &:last-of-type {
+      margin: 1rem 1rem 1rem 1rem
+    }
+  }
+}
