@@ -5527,7 +5527,7 @@ button.close {
   right: 0;
   bottom: 0;
   left: 0;
-  z-index: 1050;
+  z-index: 1060;
   display: none;
   overflow: hidden;
   outline: 0;
@@ -5590,7 +5590,7 @@ button.close {
   right: 0;
   bottom: 0;
   left: 0;
-  z-index: 1040;
+  z-index: 1050;
   background-color: #000000;
 }
 
@@ -5676,7 +5676,7 @@ button.close {
 
 .tooltip {
   position: absolute;
-  z-index: 1070;
+  z-index: 1080;
   display: block;
   margin: 0;
   font-family: "Avenir Next", BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "游ゴシック", "Yu Gothic", "メイリオ", Meiryo, Osaka, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -5789,7 +5789,7 @@ button.close {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 1060;
+  z-index: 1070;
   display: block;
   max-width: 276px;
   font-family: "Avenir Next", BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "游ゴシック", "Yu Gothic", "メイリオ", Meiryo, Osaka, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -10747,6 +10747,22 @@ a.iap-icon-link.iap-icon-link-ai:hover .iap-icon, a.iap-icon-link.iap-icon-link-
   -o-border-image: linear-gradient(to bottom, #978eda, #77afd9);
      border-image: linear-gradient(to bottom, #978eda, #77afd9);
   border-image-slice: 1;
+}
+
+.flash-message {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1040;
+}
+
+.flash-message .alert {
+  margin: 1rem 1rem 0 1rem;
+  box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2), 0px 6px 10px 0px rgba(0, 0, 0, 0.14), 0px 1px 18px 0px rgba(0, 0, 0, 0.12);
+}
+
+.flash-message .alert:last-of-type {
+  margin: 1rem 1rem 1rem 1rem;
 }
 
 .table.content-table thead th,
