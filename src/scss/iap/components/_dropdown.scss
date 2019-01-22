@@ -19,35 +19,38 @@
   }
 }
 
-.dropdown-select {
-  cursor: pointer;
+.dropdown {
+  .dropdown-select {
+    display: inline-block;
 
-  @include caret;
+    @include caret;
 
-  &:after {
-    margin-left: .5rem;
-    color: $primary;
-  }
-
-  .custom-select {
-    cursor: pointer;
-    background: transparent;
-    color: $body-color;
-    width: auto;
-    height: auto;
-    padding: 0;
-    border: none;
-    vertical-align: baseline;
-  }
-
-  &:hover,
-  &:focus {
     &:after {
-      color: darken($primary, 15%);
+      margin-left: -1rem;
+      color: $primary;
+      pointer-events: none;
     }
 
     .custom-select {
-      color: darken($body-color, 15%);
+      cursor: pointer;
+      background: transparent;
+      color: $body-color;
+      width: auto;
+      height: auto;
+      padding: 0 1.5rem 0 0;
+      border: none;
+      vertical-align: baseline;
+    }
+
+    &:hover,
+    &:focus {
+      &:after {
+        color: darken($primary, 15%);
+      }
+
+      .custom-select {
+        color: darken($body-color, 15%);
+      }
     }
   }
 }
