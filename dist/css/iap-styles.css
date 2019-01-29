@@ -10283,12 +10283,27 @@ a.iap-icon-link:hover .iap-icon, a.iap-icon-link:focus .iap-icon, a.iap-icon-lin
   background: #647789;
 }
 
+a.iap-icon-link.disabled .iap-icon {
+  background: #d0d0d0;
+  cursor: default;
+}
+
 a.iap-icon-link.iap-icon-link-global:hover .iap-icon, a.iap-icon-link.iap-icon-link-global:focus .iap-icon, a.iap-icon-link.iap-icon-link-global.active .iap-icon {
   background: #4fbdc6;
 }
 
+a.iap-icon-link.iap-icon-link-global.disabled .iap-icon {
+  background: #d0d0d0;
+  cursor: default;
+}
+
 a.iap-icon-link.iap-icon-link-ai:hover .iap-icon, a.iap-icon-link.iap-icon-link-ai:focus .iap-icon, a.iap-icon-link.iap-icon-link-ai.active .iap-icon {
   background: #a283ee;
+}
+
+a.iap-icon-link.iap-icon-link-ai.disabled .iap-icon {
+  background: #d0d0d0;
+  cursor: default;
 }
 
 .iap-icon-grid {

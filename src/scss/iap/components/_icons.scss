@@ -32,12 +32,26 @@ a.iap-icon-link {
     }
   }
 
+  &.disabled {
+    .iap-icon {
+      background: $gray-400;
+      cursor: default;
+    }
+  }
+
   &.iap-icon-link-global {
     &:hover,
     &:focus,
     &.active {
       .iap-icon {
         background: $brand-global;
+      }
+    }
+
+    &.disabled {
+      .iap-icon {
+        background: $gray-400;
+        cursor: default;
       }
     }
   }
@@ -48,6 +62,13 @@ a.iap-icon-link {
     &.active {
       .iap-icon {
         background: $brand-ai;
+      }
+    }
+
+    &.disabled {
+      .iap-icon {
+        background: $gray-400;
+        cursor: default;
       }
     }
   }
