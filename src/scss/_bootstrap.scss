@@ -15,7 +15,6 @@
 // Replace
 @import "./bootstrap/tables";
 
-
 @import "node_modules/bootstrap/scss/forms";
 // Addition
 @import "./bootstrap/forms";
@@ -28,7 +27,10 @@
 
 @import "node_modules/bootstrap/scss/button-group";
 @import "node_modules/bootstrap/scss/input-group";
-@import "node_modules/bootstrap/scss/custom-forms";
+
+// Replace
+@import "./bootstrap/custom-forms";
+
 @import "node_modules/bootstrap/scss/nav";
 @import "node_modules/bootstrap/scss/navbar";
 
@@ -45,6 +47,7 @@
 @import "node_modules/bootstrap/scss/media";
 @import "node_modules/bootstrap/scss/list-group";
 @import "node_modules/bootstrap/scss/close";
+@import "node_modules/bootstrap/scss/toasts";
 @import "node_modules/bootstrap/scss/modal";
 @import "node_modules/bootstrap/scss/tooltip";
 
@@ -52,6 +55,8 @@
 @import "./bootstrap/popover";
 
 @import "node_modules/bootstrap/scss/carousel";
+@import "node_modules/bootstrap/scss/spinners";
+
 @import "node_modules/bootstrap/scss/utilities";
 // Addition
 @import "./bootstrap/utilities";
