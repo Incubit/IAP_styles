@@ -21,12 +21,15 @@
 
 .dropdown {
   .dropdown-select {
+    position: relative;
     display: inline-block;
 
     @include caret;
 
     &:after {
-      margin-left: -1rem;
+      position: absolute;
+      top: .5rem;
+      right: 0;
       color: $primary;
       pointer-events: none;
     }
