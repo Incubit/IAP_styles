@@ -231,7 +231,7 @@ th {
 
 label {
   display: inline-block;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
 }
 
 button {
@@ -2233,10 +2233,6 @@ textarea.form-control {
   .form-inline .custom-control-label {
     margin-bottom: 0;
   }
-}
-
-.form-group label {
-  margin-bottom: 1.5rem;
 }
 
 .btn {
