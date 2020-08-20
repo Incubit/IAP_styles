@@ -39,7 +39,7 @@ $slate-gray: #606366;
 $blue:    #23a0d0;
 $indigo:  #1387ba;
 $purple:  #a283ee;
-$pink:    #f0516f;
+$pink:    #f16a7a;
 $red:     #ff6b6b;
 $orange:  #f5a623;
 $yellow:  #fbd249;
@@ -65,28 +65,28 @@ $colors: (
   "slate-gray": $slate-gray
 );
 
-$primary:   $cyan;
+$primary:   $pink;
 $secondary: $blue-gray-light;
 $success:   $indigo;
 $info:      $teal;
 $warning:   $orange;
-$danger:    $red;
+$danger:    #b00020;
 $light:     $gray-300;
 $dark:      $blue-gray-dark;
 
 // Bland colors.
 
-$brand-global:            $cyan;
-$brand-gradient-global-0: #62c4cc;
-$brand-gradient-global-1: #23a0d0;
+$brand-global:            $pink;
+$brand-gradient-global-0: #ef5761;
+$brand-gradient-global-1: #ef5c85;
 
 $brand-ai:            $purple;
 $brand-gradient-ai-0: #978eda;
 $brand-gradient-ai-1: #77afd9;
 
-$brand-danger:            $red;
-$brand-gradient-danger-0: #ff5252;
-$brand-gradient-danger-1: #ff846b;
+$brand-danger:            #b00020;
+$brand-gradient-danger-0: #b00020;
+$brand-gradient-danger-1: #e0536d;
 
 $theme-colors: (
   "primary":   $primary,

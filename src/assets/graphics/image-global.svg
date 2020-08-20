@@ -3,8 +3,8 @@
     <desc>Created with Sketch.</desc>
     <defs>
         <linearGradient x1="50%" y1="3.12898597%" x2="50%" y2="97.8241862%" id="linearGradient-1">
-            <stop stop-color="#62C4CC" offset="0%"></stop>
-            <stop stop-color="#23A0D0" offset="100%"></stop>
+            <stop stop-color="#ef5761" offset="0%"></stop>
+            <stop stop-color="#ef5c85" offset="100%"></stop>
         </linearGradient>
     </defs>
     <g id="UI" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
