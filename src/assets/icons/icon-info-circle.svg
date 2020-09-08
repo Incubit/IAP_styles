@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>InfoCircleIcon</title>
+    <g id="InfoCircleIcon" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <circle id="Oval" stroke="#B1BDC8" stroke-width="2" cx="12" cy="12" r="10"></circle>
+        <circle id="Oval" fill="#B1BDC8" cx="12" cy="7" r="2"></circle>
+        <path d="M13.25,10 C13.5261424,10 13.75,10.2238576 13.75,10.5 L13.75,16 L15,16 C15.2761424,16 15.5,16.2238576 15.5,16.5 L15.5,17.5 C15.5,17.7761424 15.2761424,18 15,18 L9,18 C8.72385763,18 8.5,17.7761424 8.5,17.5 L8.5,16.5 C8.5,16.2238576 8.72385763,16 9,16 L10.25,16 L10.25,12 L9.75,12 C9.47385763,12 9.25,11.7761424 9.25,11.5 L9.25,10.5 C9.25,10.2238576 9.47385763,10 9.75,10 L13.25,10 Z" id="Combined-Shape" fill="#B1BDC8"></path>
+    </g>
+</svg>
